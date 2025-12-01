@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin-top: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.CV_Card {
+  width: 595px;
+  height: 842px;
+  background-color: rgb(58, 58, 58);
+  position: relative;
+  box-shadow: 2px 2px 5px 10px #a3a3a3;
+}
+
+.headerSection {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-inline: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgb(165, 164, 164);
+}
+
+.headerSection img {
+  border: 1px solid white;
+  border-radius: 100px;
+  width: 86px;
+  height: 86px;
+  padding-inline: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.fullName {
+  border-right: 10px solid white;
+  padding-right: 20px;
+}
+
+.fullName p,
+.profession p {
+  color: rgb(243, 241, 241);
+  font-size: 26px;
+  font-weight: 900;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.firstGradiantP {
+  background-image: linear-gradient(to right, #a8caba 0%, #857381 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.secondGradiantp {
+  background-image: linear-gradient(
+    to right,
+    #b4b472 0%,
+    #669167 0%,
+    #d4d4b1 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.clickModes {
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.clickModes button {
+  width: 60px;
+  height: 26px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 3px #888888;
+}
+
+.darkMode {
+  background-color: #252625aa;
+  color: rgb(243, 241, 241);
+}
+
+.lightMode {
+  background-color: rgb(230, 228, 228);
+  color: #112307;
+}
+
+.personalDetails {
+  display: flex;
+}
+
+.personalInfo {
+  width: 40%;
+  height: 742px;
+  border-right: 2px solid rgb(165, 164, 164);
+  padding-inline: 30px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.profileInfo {
+  width: 60%;
+  padding-bottom: 80px;
+}
+
+.personal,
+.contact,
+.software,
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+h3 {
+  color: rgb(223, 221, 221);
+  font-size: 18px;
+  font-weight: 900;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  border-bottom: 1px solid rgb(165, 164, 164);
+  line-height: 1.5em;
+}
+
+label {
+  font-size: 14px;
+  color: rgb(223, 221, 221);
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.labelArea p {
+  border-bottom: 1px solid rgb(165, 164, 164);
+  line-height: 1.5em;
+  font-size: 11px;
+  color: rgb(186, 184, 184);
+  font-family: "Oswald", sans-serif;
+}
+
+.areaLink {
+  display: flex;
+  flex-direction: column;
+}
+
+.areaLink a {
+  text-decoration: none;
+  color: rgb(223, 221, 221);
+  font-size: 11px;
+  border-bottom: 1px solid rgb(165, 164, 164);
+  line-height: 1.5em;
+}
+
+.progressLine {
+  height: 12px;
+  width: 100%;
+  background: #aaa8a8;
+  border-radius: 10px;
+  position: relative;
+  transform: scaleX(0);
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform-origin: left;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progressLine span {
+  height: 100%;
+  width: 90%;
+  background-image: linear-gradient(
+    to right,
+    #b4b472 0%,
+    #537853 0%,
+    #d7d786 100%
+  );
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform-origin: left;
+}
+.secondLine span {
+  width: 60%;
+}
+.thirdLine span {
+  width: 75%;
+}
+.fourthLine span {
+  width: 25%;
+}
+.fifthLine span {
+  width: 15%;
+}
+.svgTag {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.svgTag p {
+  font-size: 18px;
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+
+.profileInfo {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-inline: 30px;
+}
+.profile p {
+  font-size: 14px;
+  color: #f3f1f1;
+  font-family: "Oswald", sans-serif;
+}
+.progressBars {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.progressBars .circularProgressBar {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  /* background-color: #857381; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progressBars .circularProgressBar .percent {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  transform: rotate(270deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.circularProgressBar .percent span {
+  position: absolute;
+  transform: rotate(90deg);
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  color: #f5f3f3;
+}
+.progressBars .circularProgressBar .percent svg {
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+.progressBars .circularProgressBar .percent svg circle {
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke-width: 6;
+  stroke: #aaa8a8;
+  transform: translate(5px, 5px);
+}
+.progressBars .circularProgressBar .percent svg circle:nth-child(2) {
+  stroke: var(--clr);
+  stroke-dasharray: 188.5;
+  stroke-dashoffset: 188.5;
+  /* stroke-dashoffset: calc(160 - (160 * var(--num)) / 100); */
+  animation: fillAnimation 2s linear forwards;
+}
+@keyframes fillAnimation {
+  from {
+    stroke-dashoffset: 188.5;
+  }
+  to {
+    stroke-dashoffset: calc(188.5 - (188.5 * var(--num)) / 100);
+  }
+}
+.workYears {
+  display: flex;
+  margin-top: 10px;
+}
+.yearIcons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-right: 3px solid #eeeded;
+  padding-right: 10px;
+  padding-top: 4px;
+}
+.svgYearsContainer {
+  position: relative;
+  width: 50px;
+  height: 20px;
+}
+
+.svgYearsContainer svg {
+  width: 100%;
+  height: 100%;
+}
+
+.year_Text {
+  font-family: "Oswald", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  pointer-events: none;
+}
+.workPlaceTitles {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+  color: rgb(231, 229, 229);
+  font-family: "Oswald", sans-serif;
+}
+.workPlaceTitles p {
+  font-size: 14px;
+}
+
+.sculpture {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  overflow: hidden;
+  background-image: url("./img/esculture.png");
+  background-size: cover;
+  background-position: top;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+}
